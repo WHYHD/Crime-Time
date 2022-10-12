@@ -1,0 +1,100 @@
+/* Set the size of the div element that contains the map */
+@font-face {
+  font-family: 'monocraftmedium';
+  src: url('fonts/monocraft-webfont.woff2') format('woff2'),
+       url('fonts/monocraft-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@-webkit-keyframes color_change {
+  0% { background-color: rgb(255, 0, 187); }
+  100% { background-color: rgb(222, 72, 255); }
+}
+@-moz-keyframes color_change {
+  0% { background-color: rgb(255, 0, 187); }
+  100% { background-color: rgb(222, 72, 255); }
+}
+@-ms-keyframes color_change {
+  0% { background-color: rgb(255, 0, 187); }
+  100% { background-color: rgb(222, 72, 255); }
+}
+@-o-keyframes color_change {
+  0% { background-color: rgb(255, 0, 187); }
+  100% { background-color: rgb(222, 72, 255); }
+}
+@keyframes color_change {
+  0% { background-color: rgb(255, 0, 187); }
+  100% { background-color: rgb(222, 72, 255); }
+}
+
+body {
+
+   -webkit-animation: color_change 4s infinite alternate;
+   -moz-animation: color_change 4s infinite alternate;  
+   -ms-animation: color_change 4s infinite alternate;  
+   -o-animation: color_change 4s infinite alternate;  
+   animation: color_change 4s infinite alternate;   
+}
+button{
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  left: 30%;
+  background-color: aqua;
+  font-size: 24px;
+  border-radius: 1000px;
+  border: none;
+}
+#next{
+  position: relative;
+  left: 45%;
+}
+#map {
+    height: 600px;
+    /* The height is 400 pixels */
+    width:50%;
+    /* The width is the width of the web page */
+    position: fixed;
+    right: -50%;
+    top: auto;
+  }
+#mapData{
+  height: 600px;
+  /* The height is 400 pixels */
+  width:49%;
+  position: fixed;
+  top: auto;
+  background-color: aqua;
+}
+.test{
+  text-align: center;
+  padding: 10px;
+  
+}
+.navbar-container{
+  background-color: white;
+  box-shadow: 0px 4px 5px 0px rgba(191, 122, 122, 0.71);
+  width: 100%;
+  -webkit-box-shadow: 0px 4px 5px 5px rgba(191, 122, 122, 0.71);
+  -moz-box-shadow: 0px 4px 5px 0px rgba(191, 122, 122, 0.71);
+}
+.navbar {
+  display: flex;
+  max-width: 1560px;
+  padding: 20px;
+  font-size: 18px;
+  align-items: center;
+}
+.navbar-left div{
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+}
+.navbar img{
+  width: 30px;
+  align-items: center;
+}
+

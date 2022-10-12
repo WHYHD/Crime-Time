@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+  <title>Crime Time</title>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+  <link rel="stylesheet" type="text/css" href="./style.css" />
+  <script type="module" src="./index.js"></script>
+  <meta name="description" content="Our first page">
+  <meta name="keywords" content="html tutorial template">
+</head>
+
+<body>
+  
+  <div class="navbar-container">
+    <div class="navbar">
+        <div class="navbar-left">
+          <div class="Alpha" id="button">Loop</div> 
+          <div id="buttonBeta">Reset Icons</div> 
+          <div id="reset">Reset Zoom</div> 
+        </div>
+        <button id="previous">Previous</button>
+        <button id="next">Next</button>
+    </div>
+  </div>
+  <p></p>
+  <div id="mapData">
+    <div class="test" id="locationName">Location of Crime</div>
+    <div class="test" id="arrestDate">Arrest Date</div>
+    <div class="test" id="time">Time</div>
+    <div class="test" id="reportType">Report Type</div>
+    <div class="test" id="chargeDes">Charge Desciption</div>
+    <div class="test" id="dispoDesc">Disposition Description</div>
+    <div class="test" id="chargeGroup">Charge Group Description</div>
+  </div>
+  <div id="map"></div>
+  <p></p>
+  
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCQvz0S4jXr69bL4DQGGmZ8oa30NFGKhp8&callback=initMap&v=weekly"
+    defer 
+  ></script>
+</body>
+</html>
